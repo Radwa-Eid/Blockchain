@@ -1,0 +1,32 @@
+.header{
+    position :absolute;
+    z-index: 1000;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.navbar{
+    background-color: white;
+    padding:10px 0;
+    margin: auto;
+    width: 85%;
+    border-radius: 5px;
+}
+.logo{
+    text-transform: uppercase;
+}
+.logoHeading{
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+}
+.logoHeading__colored{
+    color: #30e3ca;
+}
+
+.navBtn{
+    padding: 10px 20px;
+    background-color: #30e3ca;
+    border-radius: 5px;
+    color: white;
+}

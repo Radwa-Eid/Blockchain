@@ -1,0 +1,44 @@
+.card{
+    text-align: center;
+    padding: 20px 0px;
+    width: 20%;
+    transition: all 0.3s ease-in-out;
+}
+.cardcontent{
+    flex-direction: column;
+}
+
+.cardcontent span{
+    margin-bottom: 8px;
+}
+.icon{
+    font-size: 45px;
+    color: #30e3ca;
+}
+.caption{
+    color: #666666;
+    font-size: 16px;
+}
+.number span{
+   background-color:  #e9ecef;
+   padding: 2px 15px;
+   font-size: 14px;
+   line-height: 1.5;
+   border-radius: 15px;
+}
+.card:hover{
+    background-color: #30e3ca;
+    border-radius:7px ;
+    transform: translateY(-10px);
+    box-shadow: 0 5px 30px -5px rgb(48 227 202 / 50%);
+}
+.card:hover .icon{
+    color: #fff;
+}
+.card:hover .caption{
+    color: #fff;
+}
+.card:hover .number span{
+background: #1bc5ad;
+    color: #fff;
+}

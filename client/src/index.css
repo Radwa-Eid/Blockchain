@@ -1,0 +1,92 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.gradient-bg-services {
+  background-color: hsla(188, 57%, 10%, 1);
+  background-image: radial-gradient(
+      at 89% 95%,
+      hsla(188, 47%, 7%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 62% 65%, hsla(186, 19%, 24%, 1) 0px, transparent 50%);
+}
+
+.gradient-bg-transactions {
+  background-color: hsla(188, 57%, 10%, 1);
+  background-image: radial-gradient(
+      at 89% 95%,
+      hsla(188, 47%, 7%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 62% 65%, hsla(186, 19%, 24%, 1) 0px, transparent 50%);
+}
+
+.gradient-bg-footer {
+  background-color: hsla(188, 57%, 10%, 1);
+  background-image: radial-gradient(
+      at 89% 95%,
+      hsla(188, 47%, 7%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 62% 65%, hsla(186, 19%, 24%, 1) 0px, transparent 50%);
+}
+
+.blue-glassmorphism {
+  background-color: hsla(188, 0%, 0%, 1);
+  border-radius: 10px;
+  background-image: radial-gradient(
+      at 89% 95%,
+      hsla(188, 47%, 7%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 62% 65%, hsla(186, 46%, 10%, 1) 0px, transparent 50%);
+}
+
+.white-glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.eth-card {
+  background-color: hsl(0deg 0% 71.15%);
+  background-image: radial-gradient(
+      at 80% 0%,
+      hsl(0deg 0% 100%) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 40% 20%, hsl(189deg 8.37% 90.39%) 0px, transparent 50%);
+}
+
+.text-gradient {
+  background-color: #fff;
+  background-image: radial-gradient(
+      at 4% 36%,
+      hsla(0, 0%, 100%, 1) 0,
+      transparent 53%
+    ),
+    radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

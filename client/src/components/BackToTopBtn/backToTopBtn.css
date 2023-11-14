@@ -1,0 +1,12 @@
+.back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    font-size: 50px;
+    background: #30e3ca;
+    color: white;
+    cursor: pointer;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0 5px 10px #ccc;
+  }

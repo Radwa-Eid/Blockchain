@@ -1,0 +1,62 @@
+### deploying the contract using scripts
+npx hardhat run scripts/deploy.js --network goerli
+npx hardhat run scripts/deploy.js --network sepolia
+
+### entering the console mode
+npx hardhat console
+
+
+### entering the console mode with specific network
+npx hardhat console --network goerli
+npx hardhat console --network sepolia
+
+
+
+###using the console
+
+const Lock = await ethers.getContractFactory("Lock");
+const lock = await Lock.deploy();
+await lock.deployed();
+
+console.log("Lock deployed to:", lock.address);
+
+const locked = await lock.getLocked();
+console.log("Initial locked state:", locked);
+
+await lock.setLocked(true);
+console.log("Lock state set to true");
+
+const newLocked = await lock.getLocked();
+console.log("New locked state:", newLocked);
+
+
+
+### await lock.deployed() output explain :
+
+What is Bytecode?
+
+Bytecode refers to the compiled form of the Solidity source code of a smart contract. It is the low-level representation of the contract that is executed by the Ethereum Virtual Machine (EVM). The bytecode is a sequence of machine-readable instructions that can be understood by the EVM, and it is stored on the blockchain as part of the contract's code.
+
+When you deploy a smart contract, its bytecode is uploaded to the blockchain, and a new contract is created with a unique address. This bytecode is immutable and cannot be modified once deployed. The contract's state, however, can be modified by executing its functions, which are defined in the contract's source code.
+
+The contract's state refers to the current data stored within the contract's variables and data structures at a particular moment in time. In other words, it represents the current values of the contract's variables and data structures after the contract has been deployed on the blockchain and its functions have been executed.
+
+For example, if a smart contract is created to store the balance of a user's account, then the contract's state would include the current balance of each user's account. This state can be modified by executing functions defined in the contract's source code, such as a function to transfer funds from one account to another, which would update the balances stored in the contract's state accordingly.
+
+It's important to note that the contract's state is maintained on the blockchain, and all nodes in the network have a copy of the current state. Therefore, any changes to the state made by executing the contract's functions are visible to all nodes on the network.
+
+The contract's state refers to the current data stored within the contract's variables and data structures at a particular moment in time. In other words, it represents the current values of the contract's variables and data structures after the contract has been deployed on the blockchain and its functions have been executed.
+
+For example, if a smart contract is created to store the balance of a user's account, then the contract's state would include the current balance of each user's account. This state can be modified by executing functions defined in the contract's source code, such as a function to transfer funds from one account to another, which would update the balances stored in the contract's state accordingly.
+
+It's important to note that the contract's state is maintained on the blockchain, and all nodes in the network have a copy of the current state. Therefore, any changes to the state made by executing the contract's functions are visible to all nodes on the network.
+
+Any changes made to the contract's state by executing its functions will be replicated and synchronized across all nodes on the network, meaning that all copies of the blockchain will reflect the updated state. This is because blockchain is a distributed ledger that maintains a consensus across all nodes on the network, so all nodes must agree on the current state of the contract. Once a transaction modifying the contract's state is validated and added to a block, it is broadcast to all nodes on the network, who will then update their copies of the blockchain to reflect the new state.
+
+
+In the context of Ethereum development, deployed() is a function that is used to retrieve a deployed contract instance.
+
+When you run await transactions3.deployed() in npx hardhat console, it will look for the contract instance for the transactions3 contract on the blockchain network that you have specified in your Hardhat project configuration. Once it has found the deployed instance, it will return that instance as an object.
+
+The output you are seeing is likely a JSON representation of the contract instance object, which contains various properties and methods that you can use to interact with the deployed contract on the blockchain.
+

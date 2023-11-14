@@ -1,0 +1,12 @@
+.productContent {
+    position: relative;
+  }
+  .productContent::before {
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 10%;
+    background-color: #30e3ca;
+    left: 46%;
+    bottom: -40%;
+  }

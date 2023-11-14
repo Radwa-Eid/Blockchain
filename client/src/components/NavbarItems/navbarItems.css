@@ -1,0 +1,14 @@
+.listItem{
+    margin:0 10px;
+    font-weight: 400;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.active{
+    color: #30e3ca;
+}
+
+.listItem:hover{
+    color: #30e3ca;
+}

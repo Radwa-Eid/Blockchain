@@ -1,0 +1,23 @@
+.servescards {
+  position: relative;
+  background-color: #f9f9f9;
+}
+.overLap {
+  z-index: 20000;
+  position: relative;
+  background: #fff;
+  border-radius: 7px;
+  margin-top: -50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.cardsList {
+  align-items: stretch;
+}
+
+.featureHeading {
+  color: black;
+  margin-top: 50px;
+  font-weight: 400;
+}
