@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-# FinalProject
-=======
-# FinalProject
->>>>>>> master
+Blockchain money transfer
